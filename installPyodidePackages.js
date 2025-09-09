@@ -17,5 +17,7 @@ const requirements = requirementsTxt
   .filter(Boolean);
 
 for (let requirement of requirements) {
+  console.log(`Installing ${requirement}...`);
   await micropip.install(requirement.trim());
+  console.log(`${requirement} installed successfully.`);
 }

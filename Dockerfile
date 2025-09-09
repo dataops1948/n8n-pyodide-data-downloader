@@ -5,7 +5,7 @@ USER root
 RUN apk add --update --no-cache python3 && ln -sf python3 /usr/bin/python
 RUN apk add --update py-pip
 
-RUN npm install pyodide
+RUN npm install pyodide@0.27.5
 RUN pip install --break-system-packages pkginfo pyodide_lock
 
 COPY pyodide.requirements.txt pypi.requirements.txt installPyodidePackages.js add_pypi_packages_to_pyodide.py ./
