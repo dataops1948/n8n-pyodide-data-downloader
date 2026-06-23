@@ -1,4 +1,4 @@
-FROM n8nio/n8n:1.91.1 AS builder
+FROM n8nio/n8n:2.28.0 AS builder
 
 USER root
 
@@ -19,7 +19,7 @@ RUN chmod -R 777 /home/node/node_modules/pyodide /usr/local/lib/node_modules/n8n
 USER node
 
 
-FROM n8nio/n8n:1.91.1
+FROM n8nio/n8n:2.28.0
 
 COPY --from=builder /home/node/node_modules/pyodide /pyodide-data/packages
 COPY --from=builder /usr/local/lib/node_modules/n8n/node_modules/pyodide /pyodide-data/n8n
