@@ -42,4 +42,4 @@ tzlocal
 PyMuPDF==1.26.3
 urllib3
 webencodings
-duckdb
+
