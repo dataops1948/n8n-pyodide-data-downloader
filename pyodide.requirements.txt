@@ -42,4 +42,4 @@ tzlocal
 PyMuPDF==1.26.3
 urllib3
 webencodings
-duckdb
+https://github.com/xlwings/duckdb-pyodide/releases/download/duckdb-v1.5.0-pyodide-0.29.3/duckdb-1.5.0-cp313-cp313-emscripten_3_1_58_wasm32.whl
