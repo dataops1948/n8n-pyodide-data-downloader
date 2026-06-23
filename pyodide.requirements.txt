@@ -39,6 +39,7 @@ tiktoken
 typing_extensions
 tzdata
 tzlocal
+PyMuPDF
 urllib3
 webencodings
 duckdb
